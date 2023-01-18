@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/kamTextView1"
         android:layout_width="348dp"
         android:layout_height="34dp"
         android:layout_marginTop="36dp"
-        android:text="This is a RecyclerView Test"
+        android:text="Testing"
         android:textAlignment="center"
         android:textColor="#9C27B0"
         android:textSize="24sp"
@@ -21,13 +21,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/kamRecyclerView1"
-        android:layout_width="375dp"
-        android:layout_height="538dp"
-        android:layout_marginTop="40dp"
+    <Switch
+        android:id="@+id/kamSwitch1"
+        android:layout_width="242dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:text="Change Color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kamTextView1" />
+
+    <TextView
+        android:id="@+id/kamTextViewColors"
+        android:layout_width="247dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/kamSwitch1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
