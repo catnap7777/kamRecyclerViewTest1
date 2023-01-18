@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+//.. from example on https://guides.codepath.com/android/using-the-recyclerview
+
 // Create the basic adapter extending from RecyclerView.Adapter
 // Note that we specify the custom ViewHolder which gives us access to our views
 public class ContactsAdapter extends
@@ -68,7 +70,8 @@ public class ContactsAdapter extends
         TextView textView = holder.nameTextView;
         textView.setText(contact.getName());
         Button button = holder.messageButton;
-        button.setText(contact.isOnline() ? "Message" : "Offline");
+        //button.setText(contact.isOnline() ? "Message" : "Offline");
+        button.setText(contact.isOnline() ? "Online" : "Offline");
         button.setEnabled(contact.isOnline());
     }
 
